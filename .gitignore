@@ -3,9 +3,13 @@
 *.pyc
 
 /requirements-dev.txt
+/requirements.txt
 #virtual environments
 venv
 .env/
+
+#environments
+*.env*
 
 #don't know yet
 *.pyo
@@ -13,3 +17,4 @@ venv
 *.pdb
 *.egg-info/
 *.egg
+
