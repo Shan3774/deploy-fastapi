@@ -3,7 +3,6 @@
 *.pyc
 
 /requirements-dev.txt
-/requirements.txt
 #virtual environments
 venv
 .env/
