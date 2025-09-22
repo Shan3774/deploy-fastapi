@@ -1,7 +1,8 @@
 #auto gen pycache files and updates
-/__pycache__/
+/__pycache__
 *.pyc
 
+/requirements-dev.txt
 #virtual environments
 venv
 .env/
