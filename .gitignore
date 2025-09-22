@@ -1,0 +1,14 @@
+#auto gen pycache files and updates
+__pycache__/
+*.pyc
+
+#virtual environments
+venv
+.env/
+
+#don't know yet
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
