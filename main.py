@@ -4,9 +4,27 @@ from typing import List, Annotated, Optional
 from database import sessionLocal, engine
 import models
 from sqlalchemy.orm import Session
+from fastapi.middleware.cors import CORSMiddleware
 
 #create the app
 app = FastAPI()
+
+# List the origins that are allowed to make requests to your API
+origins = [
+    "http://localhost:3000",  # Your local React app's origin
+    "http://localhost:8000",  # If you're running your frontend on a different port
+    "https://deploy-fastapi-h71l.onrender.com" # Your deployed backend origin
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  # This tells the browser to allow these origins
+    allow_credentials=True,
+    allow_methods=["*"],    # Allows all HTTP methods (GET, POST, etc.)
+    allow_headers=["*"],    # Allows all headers
+)
+
+
 models.Base.metadata.create_all(bind=engine)
 
 
