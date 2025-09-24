@@ -13,7 +13,7 @@ app = FastAPI()
 origins = [
     "http://localhost:3000",  # Your local React app's origin
     "http://localhost:8000",  # If you're running your frontend on a different port
-    "https://deploy-fastapi-h71l.onrender.com" # Your deployed backend origin
+    "https://deploy-fastapi-h71l.onrender.com", # Your deployed backend origin
     "https://quiz-app-jqlidptzn-abebeandkebede37-7935s-projects.vercel.app"
 ]
 
